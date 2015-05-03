@@ -8,7 +8,6 @@
 
 #import "NewsViewController.h"
 #import "AzureHandler.h"
-#import "CROPhotoViewController.h"
 
 @interface NewsViewController (){
     AzureHandler *azureHandler;
@@ -43,10 +42,6 @@
     [super viewWillAppear:animated];
     [self syncViewVithModel];
     // Añadimos un gesture recognizer a la foto
-    self.imageView.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                          action:@selector(displayDetailPhoto:)];
-    [self.imageView addGestureRecognizer:tap];
 }
 
 - (void)viewDidLoad {
@@ -66,58 +61,21 @@
     [[NSNotificationCenter defaultCenter]postNotification:(notification)];
 }
 
-
-#pragma mark - Actions
--(void)displayDetailPhoto:(id) sender{
-    
-    NSLog(@"Tap in Image");
-    CROPhotoViewController *pVC = [[CROPhotoViewController alloc] initWithNews:self.news];
-    
-    
-    [self.navigationController pushViewController:pVC
-                                         animated:YES];
-    
-}
-- (IBAction)publishNew:(id)sender {
-    self.news.state=@"Pending Pubishing Batch";
-    [[AzureHandler getInstance]updateNewsToAzureWithNews:self.news block:^(CRONews *news) {
-        NSLog(@"Noticia actulizada correctamente en Azure");
-        news.image=self.news.image;
-        //syncronizamos
-        self.news=news;
-        [self syncViewVithModel];
-    }];
-    [self postNewsModificationEvent];
-    [self.navigationController popViewControllerAnimated:true];
-    
-}
-- (IBAction)saveNews:(id)sender {
-    [self syncModelWithView];
-    if(inserting){
-        [azureHandler uploadNewsToAzureWithNews:self.news block:^(CRONews *news) {
-            NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-            formatter.dateFormat=@"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
-            self.modificationDateValue.text= [formatter stringFromDate:self.news.modificationDate];
-            [self.navigationController popViewControllerAnimated:true];
-            [self postNewsModificationEvent];
-        }];
+- (IBAction)rateNews:(id)sender {
+    if([self.ratingValueView.text isEqualToString:@""]){
+        
     }else{
-        NSDate *date = [[NSDate alloc]init];
-        self.news.modificationDate=date;
-        [[AzureHandler getInstance]updateNewsToAzureWithNews:self.news block:^(CRONews *news) {
-            NSLog(@"Noticia actulizada correctamente en Azure");
-            news.image=self.news.image;
-            //syncronizamos
-            self.news=news;
-            NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-            formatter.dateFormat=@"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
-            self.modificationDateValue.text= [formatter stringFromDate:self.news.modificationDate];
-            [self syncViewVithModel];
-            [self.navigationController popViewControllerAnimated:true];
-            [self postNewsModificationEvent];
-        }];
+    //Pillamos el rating
+        self.news.rating=self.ratingValueView.text;
+    [[AzureHandler getInstance]insertRatingWithNews:self.news block:^(CRONews *news) {
+        NSLog(@"Noticia actulizada correctamente en Azure");
+        //news.image=self.news.image;
+        //syncronizamos
+        //[self postNewsModificationEvent];
+        [self.navigationController popViewControllerAnimated:true];
+    }];
     }
-    
+
 }
 
 -(void) syncModelWithView{

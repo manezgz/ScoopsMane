@@ -14,10 +14,13 @@
 
 @property (strong,nonatomic) MSClient *client;
 @property (strong,nonatomic) MSTable *newsTable;
+@property (strong,nonatomic) MSTable *ratingTable;
 
 +(AzureHandler *) getInstance;
 
 -(void)uploadNewsToAzureWithNews:(CRONews*)news block:(void (^)(CRONews* news))completionBlock;
+
+-(void)insertRatingWithNews:(CRONews*)news block:(void (^)(CRONews* news))completionBlock;
 
 
 -(void)updateNewsToAzureWithNews:(CRONews*)news block:(void (^)(CRONews* news))completionBlock;

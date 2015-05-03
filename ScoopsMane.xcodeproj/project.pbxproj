@@ -20,8 +20,6 @@
 		3A491A541AF3ECFD00724A1C /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A521AF3ECFD00724A1C /* NewsViewController.m */; };
 		3A491A551AF3ECFD00724A1C /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A531AF3ECFD00724A1C /* NewsViewController.xib */; };
 		3A491A571AF3FB8900724A1C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A491A561AF3FB8900724A1C /* MapKit.framework */; };
-		3A491A5B1AF4087E00724A1C /* CROPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A591AF4087E00724A1C /* CROPhotoViewController.m */; };
-		3A491A5C1AF4087E00724A1C /* CROPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A5A1AF4087E00724A1C /* CROPhotoViewController.xib */; };
 		3A491A611AF4229200724A1C /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A5F1AF4229200724A1C /* LoginController.m */; };
 		3A491A621AF4229200724A1C /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A601AF4229200724A1C /* LoginController.xib */; };
 		3A491A6A1AF4314D00724A1C /* CROUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A691AF4314D00724A1C /* CROUser.m */; };
@@ -60,9 +58,6 @@
 		3A491A521AF3ECFD00724A1C /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		3A491A531AF3ECFD00724A1C /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		3A491A561AF3FB8900724A1C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		3A491A581AF4087E00724A1C /* CROPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CROPhotoViewController.h; path = ../../practica/practica/CROPhotoViewController.h; sourceTree = "<group>"; };
-		3A491A591AF4087E00724A1C /* CROPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CROPhotoViewController.m; path = ../../practica/practica/CROPhotoViewController.m; sourceTree = "<group>"; };
-		3A491A5A1AF4087E00724A1C /* CROPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CROPhotoViewController.xib; path = ../../practica/practica/CROPhotoViewController.xib; sourceTree = "<group>"; };
 		3A491A5E1AF4229200724A1C /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		3A491A5F1AF4229200724A1C /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		3A491A601AF4229200724A1C /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
@@ -186,9 +181,6 @@
 		3A491A5D1AF4088800724A1C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3A491A581AF4087E00724A1C /* CROPhotoViewController.h */,
-				3A491A591AF4087E00724A1C /* CROPhotoViewController.m */,
-				3A491A5A1AF4087E00724A1C /* CROPhotoViewController.xib */,
 				3A491A511AF3ECFD00724A1C /* NewsViewController.h */,
 				3A491A521AF3ECFD00724A1C /* NewsViewController.m */,
 				3A491A531AF3ECFD00724A1C /* NewsViewController.xib */,
@@ -286,7 +278,6 @@
 				3A491A551AF3ECFD00724A1C /* NewsViewController.xib in Resources */,
 				3A491A621AF4229200724A1C /* LoginController.xib in Resources */,
 				3A4919D01AED51CB00724A1C /* LaunchScreen.xib in Resources */,
-				3A491A5C1AF4087E00724A1C /* CROPhotoViewController.xib in Resources */,
 				3A4919CD1AED51CB00724A1C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +303,6 @@
 				3A491A541AF3ECFD00724A1C /* NewsViewController.m in Sources */,
 				3A491A6A1AF4314D00724A1C /* CROUser.m in Sources */,
 				3A4919C51AED51CB00724A1C /* AppDelegate.m in Sources */,
-				3A491A5B1AF4087E00724A1C /* CROPhotoViewController.m in Sources */,
 				3A4919C21AED51CB00724A1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

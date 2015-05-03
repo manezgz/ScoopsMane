@@ -25,5 +25,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *modificationDateValue;
+@property (weak, nonatomic) IBOutlet UITextField *ratingValueView;
 
 @end

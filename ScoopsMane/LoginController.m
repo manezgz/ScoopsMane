@@ -17,8 +17,6 @@
     MSClient * client;
     CROUser *userLogged;
     NSMutableArray *booksPublished;
-    NSMutableArray *booksPending;
-    NSMutableArray *booksBatch;
     NSMutableDictionary *dictionary;
 }
 
@@ -70,13 +68,10 @@
         
         //Tenemos que ir a azure a que nos traiga todas las noticias que tiene creadas este usuario
         MSTable *newsTable=[client tableWithName:@"NEWS"];
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"author == %@",userLogged.name];
-        NSMutableArray *resultArray=[[NSMutableArray alloc]init];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"state == %@",@"Published"];
         
         //Inicializo los objectos
         booksPublished=[[NSMutableArray alloc]init];
-        booksPending=[[NSMutableArray alloc]init];
-        booksBatch=[[NSMutableArray alloc]init];
         dictionary=[[NSMutableDictionary alloc]init];
         
         [newsTable readWithPredicate:predicate completion:^(NSArray *items, NSInteger totalCount, NSError *error) {
@@ -98,8 +93,6 @@
                 }
                 
                 [dictionary setObject:booksPublished forKey:@"Published"];
-                [dictionary setObject:booksBatch forKey:@"Pending Pubishing Batch"];
-                [dictionary setObject:booksPending forKey:@"Not published"];
                 
                 NewsTableViewController *tableVC=[[NewsTableViewController alloc]initWithDictionaryOfNews:dictionary
                                                                                            withStyle:UITableViewStylePlain
@@ -121,13 +114,7 @@
 }
 
 -(void) addNews:(CRONews*)news{
-    if([news.state isEqualToString:@"Not published"]){
-        [booksPending addObject:news];
-    }else if([news.state isEqualToString:@"Pending Pubishing Batch"]){
-        [booksBatch addObject:news];
-    }else if([news.state isEqualToString:@"Published"]){
-        [booksPublished addObject:news];
-    }
+    [booksPublished addObject:news];
 }
 
 -(UIImage *)imageResize :(UIImage*)img andResizeTo:(CGSize)newSize

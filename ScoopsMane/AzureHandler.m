@@ -35,6 +35,7 @@ static  AzureHandler *inst = nil;
 
     // crear instacia de MSTable para persistir en tabla
     _newsTable = [self.client tableWithName:@"NEWS"];
+    _ratingTable = [self.client tableWithName:@"RATINGS"];
     
     return self;
 }
@@ -76,6 +77,26 @@ static  AzureHandler *inst = nil;
          ];
 
 }
+
+-(void)insertRatingWithNews:(CRONews*)news block:(void (^)(CRONews* news))completionBlock{
+    //Crear diccionario from CRONews
+    NSDictionary *newsDict = @{@"newsid":news.idAzure,
+                               @"rating":news.rating};
+    
+    //Subimos a azure
+    [self.ratingTable insert:newsDict
+                completion:^(NSDictionary *item, NSError *error) {
+                    
+                    if (!error) {
+                        NSLog(@"El resultado de la insercion es : %@", item);
+                        completionBlock(nil);
+                    } else {
+                        NSLog(@"Error --> %@", error);
+                    }
+                }
+     ];
+}
+
 
 -(void)updateNewsToAzureWithNews:(CRONews*)news block:(void (^)(CRONews* news))completionBlock{
     //Crear diccionario from CRONews

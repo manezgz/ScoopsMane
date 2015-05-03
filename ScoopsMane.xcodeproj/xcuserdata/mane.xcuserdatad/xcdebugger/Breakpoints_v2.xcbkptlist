@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoopsMane/NewsViewController.m"
-            timestampString = "452374406.031831"
+            timestampString = "452385817.750172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159">
+            startingLineNumber = "117"
+            endingLineNumber = "117">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -54,11 +54,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoopsMane/NewsViewController.m"
-            timestampString = "452374406.031831"
+            timestampString = "452385817.750172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163">
+            startingLineNumber = "121"
+            endingLineNumber = "121">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoopsMane/NewsViewController.m"
-            timestampString = "452374406.031831"
+            timestampString = "452385817.750172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169">
+            startingLineNumber = "127"
+            endingLineNumber = "127">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,11 +82,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoopsMane/NewsViewController.m"
-            timestampString = "452339990.389761"
+            timestampString = "452379752.233151"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-postNewsModificationEvent"
             landmarkType = "5">
          </BreakpointContent>
@@ -97,13 +97,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ScoopsMane/NewsViewController.m"
-            timestampString = "452374406.031831"
+            filePath = "ScoopsMane/AzureHandler.m"
+            timestampString = "452385586.130083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-saveNews:"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-insertRatingWithNews:block:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

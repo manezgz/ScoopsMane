@@ -9,11 +9,23 @@
 /* Begin PBXBuildFile section */
 		3A4919C21AED51CB00724A1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4919C11AED51CB00724A1C /* main.m */; };
 		3A4919C51AED51CB00724A1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4919C41AED51CB00724A1C /* AppDelegate.m */; };
-		3A4919C81AED51CB00724A1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4919C71AED51CB00724A1C /* ViewController.m */; };
 		3A4919CB1AED51CB00724A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4919C91AED51CB00724A1C /* Main.storyboard */; };
 		3A4919CD1AED51CB00724A1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4919CC1AED51CB00724A1C /* Images.xcassets */; };
 		3A4919D01AED51CB00724A1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4919CE1AED51CB00724A1C /* LaunchScreen.xib */; };
 		3A4919DC1AED51CB00724A1C /* ScoopsManeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4919DB1AED51CB00724A1C /* ScoopsManeTests.m */; };
+		3A491A371AED973B00724A1C /* 1601118_10154107430985232_5173404889896842031_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A361AED973B00724A1C /* 1601118_10154107430985232_5173404889896842031_n.jpg */; };
+		3A491A411AEED88500724A1C /* CRONews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A401AEED88500724A1C /* CRONews.m */; };
+		3A491A441AEED9F900724A1C /* AzureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A431AEED9F900724A1C /* AzureHandler.m */; };
+		3A491A491AF3DF6A00724A1C /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A491A481AF3DF6A00724A1C /* WindowsAzureMobileServices.framework */; };
+		3A491A541AF3ECFD00724A1C /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A521AF3ECFD00724A1C /* NewsViewController.m */; };
+		3A491A551AF3ECFD00724A1C /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A531AF3ECFD00724A1C /* NewsViewController.xib */; };
+		3A491A571AF3FB8900724A1C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A491A561AF3FB8900724A1C /* MapKit.framework */; };
+		3A491A5B1AF4087E00724A1C /* CROPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A591AF4087E00724A1C /* CROPhotoViewController.m */; };
+		3A491A5C1AF4087E00724A1C /* CROPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A5A1AF4087E00724A1C /* CROPhotoViewController.xib */; };
+		3A491A611AF4229200724A1C /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A5F1AF4229200724A1C /* LoginController.m */; };
+		3A491A621AF4229200724A1C /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A491A601AF4229200724A1C /* LoginController.xib */; };
+		3A491A6A1AF4314D00724A1C /* CROUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A691AF4314D00724A1C /* CROUser.m */; };
+		3A491A6D1AF4A16300724A1C /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A491A6C1AF4A16300724A1C /* NewsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +44,32 @@
 		3A4919C11AED51CB00724A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A4919C31AED51CB00724A1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A4919C41AED51CB00724A1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A4919C61AED51CB00724A1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A4919C71AED51CB00724A1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A4919CA1AED51CB00724A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A4919CC1AED51CB00724A1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A4919CF1AED51CB00724A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3A4919D51AED51CB00724A1C /* ScoopsManeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoopsManeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4919DA1AED51CB00724A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4919DB1AED51CB00724A1C /* ScoopsManeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoopsManeTests.m; sourceTree = "<group>"; };
+		3A491A361AED973B00724A1C /* 1601118_10154107430985232_5173404889896842031_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1601118_10154107430985232_5173404889896842031_n.jpg; sourceTree = "<group>"; };
+		3A491A3F1AEED88500724A1C /* CRONews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRONews.h; sourceTree = "<group>"; };
+		3A491A401AEED88500724A1C /* CRONews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRONews.m; sourceTree = "<group>"; };
+		3A491A421AEED9F900724A1C /* AzureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureHandler.h; sourceTree = "<group>"; };
+		3A491A431AEED9F900724A1C /* AzureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AzureHandler.m; sourceTree = "<group>"; };
+		3A491A481AF3DF6A00724A1C /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		3A491A511AF3ECFD00724A1C /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		3A491A521AF3ECFD00724A1C /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		3A491A531AF3ECFD00724A1C /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		3A491A561AF3FB8900724A1C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A491A581AF4087E00724A1C /* CROPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CROPhotoViewController.h; path = ../../practica/practica/CROPhotoViewController.h; sourceTree = "<group>"; };
+		3A491A591AF4087E00724A1C /* CROPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CROPhotoViewController.m; path = ../../practica/practica/CROPhotoViewController.m; sourceTree = "<group>"; };
+		3A491A5A1AF4087E00724A1C /* CROPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CROPhotoViewController.xib; path = ../../practica/practica/CROPhotoViewController.xib; sourceTree = "<group>"; };
+		3A491A5E1AF4229200724A1C /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		3A491A5F1AF4229200724A1C /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		3A491A601AF4229200724A1C /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		3A491A681AF4314D00724A1C /* CROUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CROUser.h; sourceTree = "<group>"; };
+		3A491A691AF4314D00724A1C /* CROUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CROUser.m; sourceTree = "<group>"; };
+		3A491A6B1AF4A16300724A1C /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		3A491A6C1AF4A16300724A1C /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A491A571AF3FB8900724A1C /* MapKit.framework in Frameworks */,
+				3A491A491AF3DF6A00724A1C /* WindowsAzureMobileServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,8 @@
 		3A4919B31AED51CB00724A1C = {
 			isa = PBXGroup;
 			children = (
+				3A491A561AF3FB8900724A1C /* MapKit.framework */,
+				3A4919ED1AED73E500724A1C /* frameworks */,
 				3A4919BE1AED51CB00724A1C /* ScoopsMane */,
 				3A4919D81AED51CB00724A1C /* ScoopsManeTests */,
 				3A4919BD1AED51CB00724A1C /* Products */,
@@ -81,14 +115,16 @@
 		3A4919BE1AED51CB00724A1C /* ScoopsMane */ = {
 			isa = PBXGroup;
 			children = (
+				3A491A451AEED9FE00724A1C /* Azure */,
+				3A491A3E1AEED86C00724A1C /* Model */,
+				3A491A361AED973B00724A1C /* 1601118_10154107430985232_5173404889896842031_n.jpg */,
 				3A4919C31AED51CB00724A1C /* AppDelegate.h */,
 				3A4919C41AED51CB00724A1C /* AppDelegate.m */,
-				3A4919C61AED51CB00724A1C /* ViewController.h */,
-				3A4919C71AED51CB00724A1C /* ViewController.m */,
 				3A4919C91AED51CB00724A1C /* Main.storyboard */,
 				3A4919CC1AED51CB00724A1C /* Images.xcassets */,
 				3A4919CE1AED51CB00724A1C /* LaunchScreen.xib */,
 				3A4919BF1AED51CB00724A1C /* Supporting Files */,
+				3A491A5D1AF4088800724A1C /* Controllers */,
 			);
 			path = ScoopsMane;
 			sourceTree = "<group>";
@@ -117,6 +153,52 @@
 				3A4919DA1AED51CB00724A1C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A4919ED1AED73E500724A1C /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A491A481AF3DF6A00724A1C /* WindowsAzureMobileServices.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		3A491A3E1AEED86C00724A1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A491A3F1AEED88500724A1C /* CRONews.h */,
+				3A491A401AEED88500724A1C /* CRONews.m */,
+				3A491A681AF4314D00724A1C /* CROUser.h */,
+				3A491A691AF4314D00724A1C /* CROUser.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3A491A451AEED9FE00724A1C /* Azure */ = {
+			isa = PBXGroup;
+			children = (
+				3A491A421AEED9F900724A1C /* AzureHandler.h */,
+				3A491A431AEED9F900724A1C /* AzureHandler.m */,
+			);
+			name = Azure;
+			sourceTree = "<group>";
+		};
+		3A491A5D1AF4088800724A1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A491A581AF4087E00724A1C /* CROPhotoViewController.h */,
+				3A491A591AF4087E00724A1C /* CROPhotoViewController.m */,
+				3A491A5A1AF4087E00724A1C /* CROPhotoViewController.xib */,
+				3A491A511AF3ECFD00724A1C /* NewsViewController.h */,
+				3A491A521AF3ECFD00724A1C /* NewsViewController.m */,
+				3A491A531AF3ECFD00724A1C /* NewsViewController.xib */,
+				3A491A5E1AF4229200724A1C /* LoginController.h */,
+				3A491A5F1AF4229200724A1C /* LoginController.m */,
+				3A491A601AF4229200724A1C /* LoginController.xib */,
+				3A491A6B1AF4A16300724A1C /* NewsTableViewController.h */,
+				3A491A6C1AF4A16300724A1C /* NewsTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +281,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A491A371AED973B00724A1C /* 1601118_10154107430985232_5173404889896842031_n.jpg in Resources */,
 				3A4919CB1AED51CB00724A1C /* Main.storyboard in Resources */,
+				3A491A551AF3ECFD00724A1C /* NewsViewController.xib in Resources */,
+				3A491A621AF4229200724A1C /* LoginController.xib in Resources */,
 				3A4919D01AED51CB00724A1C /* LaunchScreen.xib in Resources */,
+				3A491A5C1AF4087E00724A1C /* CROPhotoViewController.xib in Resources */,
 				3A4919CD1AED51CB00724A1C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4919C81AED51CB00724A1C /* ViewController.m in Sources */,
+				3A491A611AF4229200724A1C /* LoginController.m in Sources */,
+				3A491A441AEED9F900724A1C /* AzureHandler.m in Sources */,
+				3A491A411AEED88500724A1C /* CRONews.m in Sources */,
+				3A491A6D1AF4A16300724A1C /* NewsTableViewController.m in Sources */,
+				3A491A541AF3ECFD00724A1C /* NewsViewController.m in Sources */,
+				3A491A6A1AF4314D00724A1C /* CROUser.m in Sources */,
 				3A4919C51AED51CB00724A1C /* AppDelegate.m in Sources */,
+				3A491A5B1AF4087E00724A1C /* CROPhotoViewController.m in Sources */,
 				3A4919C21AED51CB00724A1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,8 +435,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScoopsMane",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScoopsMane/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,8 +455,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScoopsMane",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScoopsMane/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -412,6 +524,7 @@
 				3A4919E11AED51CB00724A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A4919E21AED51CB00724A1C /* Build configuration list for PBXNativeTarget "ScoopsManeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +533,7 @@
 				3A4919E41AED51CB00724A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
